@@ -1,24 +1,24 @@
 import {chromium, expect, test} from "@playwright/test"
 
-(async () => {
-    const capabilities = {
-      'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-      'browserVersion': 'latest',
-      'LT:Options': {
-        'platform': 'Windows 10',
-        'build': 'playwright101_assignment',
-        'name': 'playwright101_assignment',
-        'user': process.env.LT_USERNAME,
-        'accessKey': process.env.LT_ACCESS_KEY,
-        'network': true,
-        'video': true,
-        'console': true
-      }
-    }
+// (async () => {
+//     const capabilities = {
+//       'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
+//       'browserVersion': 'latest',
+//       'LT:Options': {
+//         'platform': 'Windows 10',
+//         'build': 'playwright101_assignment',
+//         'name': 'playwright101_assignment',
+//         'user': process.env.LT_USERNAME,
+//         'accessKey': process.env.LT_ACCESS_KEY,
+//         'network': true,
+//         'video': true,
+//         'console': true
+//       }
+//     }
   
-   const browser = await chromium.connect({
-      wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
-    })})
+//    const browser = await chromium.connect({
+//       wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
+//     })})
 
 test("Assignment Task: Test Scenario 1", async ({page}) => {
 

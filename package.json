@@ -9,7 +9,7 @@
   "description": "Sample project to run playwright tests using playwright runner on LambdaTest platform",
   "scripts": {
     "test": "npx playwright test --config=./playwright.config.ts"
-  },
+  },  
   "devDependencies": {
     "@playwright/test": "1.29.2",
     "playwright": "1.29.2"
