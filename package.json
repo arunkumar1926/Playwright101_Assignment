@@ -1,10 +1,10 @@
 {
   "name": "playwright101_assignment",
   "version": "1.0.0",
-  "author": "LambdaTest",
+  "author": "arunkumar.k",
   "type": "module",
   "engines": {
-    "node": "=18.14.1"
+    "node": ">=14"
   },
   "description": "Sample project to run playwright tests using playwright runner on LambdaTest platform",
   "scripts": {

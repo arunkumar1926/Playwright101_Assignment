@@ -6,8 +6,8 @@ import {chromium, expect, test} from "@playwright/test"
       'browserVersion': 'latest',
       'LT:Options': {
         'platform': 'Windows 10',
-        'build': 'Playwright Sample Build',
-        'name': 'Playwright Sample Test',
+        'build': 'playwright101_assignment',
+        'name': 'playwright101_assignment',
         'user': process.env.LT_USERNAME,
         'accessKey': process.env.LT_ACCESS_KEY,
         'network': true,
@@ -129,6 +129,7 @@ test("Assignment Task: Test Scenario 3", async ({page}) => {
 
     //Submit the form and validate the thank you message 
     await submitBtn.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(3000);
     await submitBtn.click();
     await page.waitForTimeout(5000);
 

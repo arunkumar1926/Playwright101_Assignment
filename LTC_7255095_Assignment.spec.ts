@@ -6,8 +6,8 @@ import {chromium, expect, test} from "@playwright/test"
       'browserVersion': 'latest',
       'LT:Options': {
         'platform': 'Windows 10',
-        'build': 'Playwright Sample Build',
-        'name': 'Playwright Sample Test',
+        'build': 'playwright101_assignment',
+        'name': 'playwright101_assignment',
         'user': process.env.LT_USERNAME,
         'accessKey': process.env.LT_ACCESS_KEY,
         'network': true,
@@ -18,7 +18,8 @@ import {chromium, expect, test} from "@playwright/test"
   
    const browser = await chromium.connect({
       wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
-    })})
+    })}) ()
+
 
 test("Assignment Task: Test Scenario 1", async ({page}) => {
 
