@@ -1,4 +1,6 @@
-import {chromium, expect, test} from "@playwright/test"
+import test from "../lambdatest-setup";
+import { expect } from "@playwright/test"
+
 
 // (async () => {
 //     const capabilities = {

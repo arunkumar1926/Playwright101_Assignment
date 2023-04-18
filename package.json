@@ -1,12 +1,12 @@
 {
   "name": "playwright101_assignment",
   "version": "1.0.0",
-  "author": "arunkumar.k",
+  "author": "Arun Kumar K",
   "type": "module",
   "engines": {
     "node": ">=14"
   },
-  "description": "Sample project to run playwright tests using playwright runner on LambdaTest platform",
+  "description": "Playwright assignment project to run the tests using playwright runner on LambdaTest platform",
   "scripts": {
     "test": "npx playwright test --config=./playwright.config.ts"
   },  

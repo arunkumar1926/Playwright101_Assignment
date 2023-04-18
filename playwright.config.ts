@@ -75,7 +75,7 @@ const config: PlaywrightTestConfig = {
 
 export default config
 
-
+//"test": "npx playwright test --config=./playwright.config.ts"
 // import { defineConfig, devices } from '@playwright/test';
 
 // /**

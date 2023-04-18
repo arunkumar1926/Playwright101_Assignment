@@ -15,8 +15,10 @@ const capabilities = {
     platform: "Windows 10",
     build: "playwright101_assignment",
     name: "playwright101_assignment",
-    user: process.env.LT_USERNAME,
-    accessKey: process.env.LT_ACCESS_KEY,
+    user: "arunkumar.k",
+    accessKey: "oFChMbJGfLILliESW9bX8u1mPWO7f4UECWVGCEQX3zszmdd9Ik",
+    //user: process.env.LT_USERNAME,
+    //accessKey: process.env.LT_ACCESS_KEY,
     network: true,
     video: true,
     console: true,
@@ -52,11 +54,17 @@ const test = base.test.extend({
         `${testInfo.title} - ${fileName}`
       );
 
+
       const browser = await chromium.connect({
         wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(
           JSON.stringify(capabilities)
         )}`,
       });
+
+      //const browserServer = await chromium.launchServer();
+      //const wsEndpoint = browserServer.wsEndpoint();
+
+      
 
       const ltPage = await browser.newPage(testInfo.project.use);
       await use(ltPage);
